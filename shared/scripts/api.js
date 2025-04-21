@@ -83,7 +83,6 @@ async function getData(endpoint) {
 }
 
 async function postData(endpoint, data) {
-    console.log(data)
     try {
         const response = await fetch(`${API_BASE_URL}${endpoint}`, {
             method: 'POST',
@@ -108,7 +107,6 @@ async function postData(endpoint, data) {
 }
 
 async function postDataWJSON(endpoint, data) {
-    console.log(data)
     let header = createHeaders();
     header['Content-Type'] = 'application/json';
     try {
@@ -136,7 +134,6 @@ async function postDataWJSON(endpoint, data) {
 
 async function patchDataWoFiles(endpoint, data) {
     let header = createHeaders();
-    console.log(data)
     header['Content-Type'] = 'application/json';
     try {
         const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -162,7 +159,6 @@ async function patchDataWoFiles(endpoint, data) {
 }
 
 async function patchData(endpoint, formData) {
-    console.log(formData)
     const headers = createHeaders();
 
     try {
