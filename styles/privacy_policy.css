@@ -1,0 +1,11 @@
+.content-box{
+    max-width: min(1440px, 75%)
+}
+
+ul{
+
+}
+
+li{
+    margin: 12px 0px;
+}
